@@ -88,7 +88,7 @@ min_amount_row = filtered_df[filtered_df['amount'] == filtered_df['amount'].min(
 
 # 月の最大金値、最小値、平均値、中央値
 st.bar_chart(filtered_df, x="date", y="amount")
-st.write(f"{select_year}年{select_month}月の最大金額は、¥{filtered_df['amount'].max():,.0f}")
+st.write(f"{select_year}年{select_month}月の最大金ggi額は、¥{filtered_df['amount'].max():,.0f}")
 st.dataframe(max_amount_row)
 st.write(f"{select_year}年{select_month}月の最小金額は、¥{filtered_df['amount'].min():,.0f}")
 st.dataframe(min_amount_row)
